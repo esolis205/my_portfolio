@@ -3,18 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "styled-components": "^5.3.5",
+    "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "cross-env": "^7.0.3",
     "eslint": "8.21.0",
-    "eslint-config-next": "12.2.4"
+    "eslint-config-next": "12.2.4",
+    "husky": "^8.0.1"
   }
 }
